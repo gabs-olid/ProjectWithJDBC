@@ -33,8 +33,8 @@ public final class PersonRepository {
     private static PreparedStatement createStatementFindByName(Connection conn, String name) throws SQLException {
         String sql = """
                 SELECT p.cpf, p.name, p.lastName, p.housenumber, a.zipcode, a.street, a.district, a.city, a.state, a.region
-                FROM firstprojectwithjava.person p
-                INNER JOIN firstprojectwithjava.address a
+                FROM projectwithjdbc.person p
+                INNER JOIN projectwithjdbc.address a
                 ON p.zipcode = a.zipcode
                 WHERE name LIKE ?;
                 """;
@@ -58,7 +58,7 @@ public final class PersonRepository {
     private static PreparedStatement createStatementFindByCpf(Connection conn, String cpf) throws SQLException {
         String sql = """
                 SELECT p.cpf, p.name, p.lastName, p.housenumber, a.zipcode, a.street, a.district, a.city, a.state, a.region
-                FROM firstprojectwithjava.person p
+                FROM projectwithjdbc.person p
                 INNER JOIN address a
                 ON p.zipcode = a.zipcode
                 WHERE p.cpf = ?;
@@ -81,7 +81,7 @@ public final class PersonRepository {
 
     private static PreparedStatement createStatementDelete(Connection conn, String cpf) throws SQLException {
         String sql = """
-                DELETE FROM firstprojectwithjava.person
+                DELETE FROM projectwithjdbc.person
                 WHERE cpf = ?;
                 """;
         PreparedStatement ps = conn.prepareStatement(sql);
@@ -101,7 +101,7 @@ public final class PersonRepository {
 
     private static PreparedStatement createStatementSave(Connection conn, Person person) throws SQLException {
         String sql = """
-                INSERT INTO `firstprojectwithjava`.`person`
+                INSERT INTO `projectwithjdbc`.`person`
                 VALUES (?, ?, ?, ?, ?);
                 """;
         PreparedStatement ps = conn.prepareStatement(sql);
@@ -127,7 +127,7 @@ public final class PersonRepository {
 
     private static PreparedStatement createStatementUpdate(Connection conn, Person person) throws SQLException {
         String sql = """
-                UPDATE `firstprojectwithjava`.`person`
+                UPDATE `projectwithjdbc`.`person`
                 SET name = ?, lastName = ?, housenumber = ?, zipcode = ?
                 WHERE cpf = ?;
                 """;

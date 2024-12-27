@@ -30,7 +30,7 @@ public final class AddressRepository {
     private static PreparedStatement createStatementFindByStreet(Connection conn, String street) throws SQLException {
         String sql = """
                 SELECT a.zipcode, a.street, a.district, a.city, a.state, a.region
-                FROM firstprojectwithjava.address a
+                FROM projectwithjdbc.address a
                 WHERE street LIKE ?;
                 """;
         PreparedStatement ps = conn.prepareStatement(sql);
@@ -53,7 +53,7 @@ public final class AddressRepository {
     private static PreparedStatement createStatementFindByZipCode(Connection conn, String zipCode) throws SQLException {
         String sql = """
                 SELECT a.zipcode, a.street, a.district, a.city, a.state, a.region
-                FROM firstprojectwithjava.address a
+                FROM projectwithjdbc.address a
                 WHERE a.zipcode = ?;
                 """;
         PreparedStatement ps = conn.prepareStatement(sql);
@@ -74,7 +74,7 @@ public final class AddressRepository {
 
     private static PreparedStatement createStatementSave(Connection conn, Address address) throws SQLException {
         String sql = """
-                INSERT INTO `firstprojectwithjava`.`address`
+                INSERT INTO `projectwithjdbc`.`address`
                 VALUES (?, ?, ?, ?, ?, ?);
                 """;
         PreparedStatement ps = conn.prepareStatement(sql);

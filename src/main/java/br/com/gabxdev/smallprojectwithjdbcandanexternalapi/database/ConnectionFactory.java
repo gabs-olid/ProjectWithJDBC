@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public final class ConnectionFactory {
     public static Connection getConnection() throws SQLException {
-        String url = "jdbc:mysql://localhost:3306/firstprojectwithjava";
+        String url = "jdbc:mysql://localhost:3306/projectwithjdbc";
         String username = "root";
         String password = "root";
 

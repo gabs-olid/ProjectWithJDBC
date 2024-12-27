@@ -4,4 +4,4 @@ out/
 
 target/
 
-.m2/
+*.iml
