@@ -1,7 +1,7 @@
 package br.com.gabxdev.smallprojectwithjdbcandanexternalapi.repository;
 
 import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.database.ConnectionFactory;
-import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.dominio.Address;
+import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.domain.Address;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

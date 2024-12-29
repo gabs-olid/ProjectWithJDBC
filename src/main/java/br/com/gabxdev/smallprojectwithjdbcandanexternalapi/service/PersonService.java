@@ -1,7 +1,7 @@
 package br.com.gabxdev.smallprojectwithjdbcandanexternalapi.service;
 
-import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.dominio.Address;
-import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.dominio.Person;
+import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.domain.Address;
+import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.domain.Person;
 import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.repository.PersonRepository;
 import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.LogManager;

@@ -1,6 +1,6 @@
 package br.com.gabxdev.smallprojectwithjdbcandanexternalapi.external;
 
-import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.dominio.AddressFromBuscaCep;
+import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.domain.AddressFromBuscaCep;
 import com.google.gson.Gson;
 import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.LogManager;

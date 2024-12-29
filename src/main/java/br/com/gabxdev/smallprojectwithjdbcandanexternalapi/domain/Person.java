@@ -1,4 +1,4 @@
-package br.com.gabxdev.smallprojectwithjdbcandanexternalapi.dominio;
+package br.com.gabxdev.smallprojectwithjdbcandanexternalapi.domain;
 
 public final class Person {
     private final String cpf;

@@ -1,7 +1,7 @@
 package br.com.gabxdev.smallprojectwithjdbcandanexternalapi.service;
 
-import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.dominio.Address;
-import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.dominio.AddressFromBuscaCep;
+import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.domain.Address;
+import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.domain.AddressFromBuscaCep;
 import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.external.ApiBuscaCep;
 import br.com.gabxdev.smallprojectwithjdbcandanexternalapi.repository.AddressRepository;
 import lombok.extern.log4j.Log4j2;
